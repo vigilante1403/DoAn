@@ -1,0 +1,34 @@
+@extends('admin.home')
+<link rel="stylesheet" href="{{ asset('css/lib/show_post.css') }}">
+@php
+$title_header="Bai Viet"
+@endphp
+
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="people-nearby">
+              @foreach($posts as $post)
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="{{ asset($post->img) }}" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">{{ $post->title }}</a></h5>
+                    <button class="btn btn-primary pull-right"><a href="delete/{{ $post->id }}" style="color:white;text-decoration:none">Delete</a></button>
+                    <p class="text-muted">{{ $post->keyword }}</p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right"><a href="show/detail/{{ $post->id }}" style="color:white;text-decoration:none">Xem chi tiet</a></button>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+
+            </div>
+    	</div>
+	</div>
+</div>
+@endsection
