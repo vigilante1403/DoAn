@@ -120,10 +120,14 @@ Expiration date: 12/31/2023</p>
 {{-- <div class=" adopt-an-animal"> --}}
   	
     <div class="row mt-2">
-        
+        @php
+        $name_product=strtolower($animal->name);
+        $data=explode(" ",$name_product);
+        $name_product=implode('-',$data);
+        @endphp
      <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; " >
          <figure class="card card-lg border-0" style="border:none!important;" >
-             <a href="#" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal->img_path) }}"></a>
+             <a href="/product/{{ $name_product }}/{{ $animal->id }}" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal->img_path) }}"></a>
              <figcaption class="info-wrap border-0">
                         <div class="row">
  

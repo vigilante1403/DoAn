@@ -30,7 +30,7 @@ a:hover{
 @section('main')
 <div class="container">
         @php
-            $filename=$encounter[0]->filenames;
+            $filename=$program[0]->filenames;
             $filename=str_replace(array('"','[',']'),'',$filename);
             $filename=explode(',',$filename);
             // $count=count($filename);
@@ -39,54 +39,55 @@ a:hover{
 <div class="row promotion">
     <div class="col-md-7" style="">
         <div class="img mt-5" style="" >
-            <img width="600" height="400px" class="" src="{{ asset('encounter/'.$img_to_present) }}" alt="">
+            <img width="600" height="400px" class="" src="{{ asset('program/'.$img_to_present) }}" alt="">
         </div>
         
     </div>
     <div class="col-md-5" style="">
         <div class="over-view " style="">
             <div class="title-product mt-5">
-                <h1>Encounters:&nbsp{{ $encounter[0]->animal_name }}</h1>
+                <h1>Animal Programs:&nbsp{{ $program[0]->program_name }}</h1>
             </div>
-            <div class="product-price">
-                <p class="price">
-                             <ins><span class="woocommerce-Price-amount amount"><bdi>
-                                <span class="woocommerce-Price-currencySymbol">From: &#36;</span>{{ $encounter[0]->price }}</bdi></span></ins></p>
-            </div>
+            
             <div class="description col-md-12" style="line-height: 20px;" >
                 <br>
-                @if($encounter[0]->animal_name=='Penguin')
-	<strong><p>Penguin Encounter</p></strong>
-<p>During this 30 minute experience, you’ll be able to meet on of our African Penguins (from a safe 6ft distance of course) and see how our keepers are able to work with them on a daily basis. Learn what they eat, what their favorite enrichment is and so much more! Don’t forget your camera (or phone), these photos are something you will love to look back at! Whether you are looking for the perfect gift or looking to treat yourself, our animal encounters are truly unique and fun.
-</p>
-<br><br>
-<p>Price: $100 per person (ages 7 and up)</p>
-<br><br>
-<p>Reservations:</p>
-<p>
-    To reserve your spot for our Penguin Encounter, please select the number of adults and number of children in your party below then select the date on the calendar you would like to visit. Available dates are shown in green on the calendar. No refunds.
-</p>
-<br>
-<p>All participants must wear a mask/facial covering during the program.</p>
-@else 
-<strong><p>Sloth Encounter</p></strong>
-<br><br>
-<p>Join us for a one of a kind experience! Meet Wally, our two-toed sloth, while learning all about him from the keepers who know him best!
-</p>
-<br>
-<p>During this 30 minute experience, you’ll be able to see Wally (from a safe 6ft distance of course) and see how our keepers are able to work with him on a daily basis. Learn what he eats, what his favorite enrichment is, how long he sleeps for and so much more! Don’t forget your camera (or phone), these photos are something you will love to look back at! Whether you are looking for the perfect gift or looking to treat yourself, our animal encounters are truly unique and fun.</p>
-<br><br>
-<p>Price: $100 per person (ages 7 and up)</p>
-<br><br>
-<p>Reservations:</p>
-<p>
-    To reserve your spot for our Sloth Encounter, please select the number of adults and number of children in your party below then select the date on the calendar you would like to visit. Available dates are shown in green on the calendar. No refunds.
-</p>
-<br>
-<p>All participants must wear a mask/facial covering during the program.</p>
+                @if($program[0]->program_name=='The Scoop on Sloths')
+	<p><strong>{{ $program[0]->program_name }}</strong></p>
     <br>
-    <br><br><br><br>
-  <p>discount coupon for an animal encounter</p>
+<p>Did you know that two-toed sloths spend most of their lives hanging upside down from trees? Meet Wally and find out why they do that and more!
+</p>
+<br>
+<p>Limited amount of participants. Ages 5 and up only.  Price of program includes general admission for the day.</p>
+<br>
+<p>$30 Adults (13 years and up)</p>
+<p>$20 Children (Ages 5 – 12)</p>
+<br>
+<p>
+    To book your spot for Scoop on Sloths, please select the number of children and adults in your party, then select the date on the calendar below. Available dates are shown in green. Payment is required at booking.  No Refunds.
+</p>
+<p>Participants who need to reschedule may do so by contacting education@jenkinsons.com.</p>
+<br>
+<i><p>All participants must wear a mask/facial covering during the program.</p></i>
+<br>
+<p><strong>Upcoming Dates:</strong></p>
+<br>
+<p>Thursday, December 8th 5:00-5:30pm</p>
+@else 
+<p><strong>{{ $program[0]->program_name }}</strong></p>
+<br>
+<p>Junior Keepers is a great program for those future marine biologists! Come experience the aquarium from an employee’s point of view.  Learn how to provide animal care, training, enrichment, and feeding to a variety of animals.
+</p>
+
+<p>You’ll go behind the scenes, meet live animals, and talk with our care staff.  Junior Keepers are required to wear sneakers.  Space is limited.</p>
+<br>
+<p>$90 per child. Ages 9-12 only. 8am – 11am. General admission for the day included.</p>
+<br>
+<p>Friday, November 11, 2022</p>
+<br>
+<p>To book your spot for Junior Keepers, please select 1 child below then select the date on the calendar you would like to visit. Available dates are shown in green on the calendar. Fill out Keeper’s Name and Birthdate and select Book Now.  If you are registering multiple children you can click on continue shopping from your cart. No Refunds. General admission for the day included. Payment is required at booking.  No Refunds. Any questions please contact
+</p>
+<p>education@jenkinsons.com.</p>
+<br>
 </div>
 @endif
         </div>
@@ -109,7 +110,7 @@ a:hover{
     </div>
 </div>
 
-@if($encounter[0]->animal_name=="Sloth")
+@if($program[0]->program_name=="The Scoop on Sloths")
 <div class="row">
     <div class="prefer title-product"><h2>You may also like&hellip;</h2></div>
 </div>
@@ -119,19 +120,19 @@ a:hover{
         
      <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; " >
          <figure class="card card-lg border-0" style="border:none!important;" >
-             <a href="#" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal[0]->img_path) }}"></a>
+             <a href="/product/wally-th-sloth/{{ $animal[0]->id }}" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal[0]->img_path) }}"></a>
              <figcaption class="info-wrap border-0">
                         <div class="row">
  
                             <div class="container mt-4 border-0"style="text-align:center ">
  
-                                <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $animal[0]->name }}</a></strong>
+                                <strong><a href="/product/wally-th-sloth/{{ $animal[0]->id }}" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $animal[0]->name }}</a></strong>
                                 <div class="price-wrap container mt-2">
-                                    <span class="price h5"></span> <br> 
+                                    <span class="price h5">${{ $animal[0]->price }}</span> <br> 
                                 </div>
                                 <div class="bottom-wrap container mt-4" style="background-color:">
                                     <a href="addInfo/" style="text-decoration: none;">
-                                    <input type="button" value="Adopt Me" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
+                                    <input type="button" style="text-align:center" value="Adopt Me" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
                                     </a>
                                 </div>
                             </div>
@@ -141,9 +142,46 @@ a:hover{
          </figure>
      </div>
     </div>
+@else
+<div class="row">
+    <div class="prefer title-product"><h2>You may also like&hellip;</h2></div>
+</div>
+
+<div class="row mt-2">
+        @foreach($animals as $animal)
+        @php
+                $name=strtolower($animal->name);
+                $data=explode(" ",$name);
+                $name=implode('-',$data);
+              @endphp
+    <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; " >
+        <figure class="card card-lg border-0" style="border:none!important;" >
+            <a href="/product/{{ $name }}/{{ $animal->id }}" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal->img_path) }}"></a>
+            <figcaption class="info-wrap border-0">
+                       <div class="row">
+
+                           <div class="container mt-4 border-0"style="text-align:center ">
+
+                               <strong><a href="/product/{{ $name }}/{{ $animal->id }}" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $animal->name }}</a></strong>
+                               <div class="price-wrap container mt-2">
+                                   <span class="price h5">${{ $animal->price }}</span> <br> 
+                               </div>
+                               <div class="bottom-wrap container mt-4" style="background-color:">
+                                   <a href="addInfo/" style="text-decoration: none;">
+                                   <input type="button" style="text-align:center" value="Adopt Me" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
+                                   </a>
+                               </div>
+                           </div>
+
+            </figcaption>
+             
+        </figure>
+    </div>
+            @endforeach
+   </div>
 @endif
 </div>
-@if($encounter[0]->animal_name=='Sloth')
+@if($program[0]->program_name=='The Scoop on Sloths')
 <div class=" adopt-an-animal" style="background-color: azure;">
     <div class="container">
     <div class="row">
@@ -152,7 +190,7 @@ a:hover{
     <div class="row mt-2">
         
         @php
-            $filename=$data_related[0]->filenames;
+            $filename=$related[0]->filenames;
         $filename=str_replace(array('"','[',']'),'',$filename);
         $filename=explode(',',$filename);
         // $count=count($filename);
@@ -160,20 +198,17 @@ a:hover{
             @endphp
      <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; "  >
          <figure class="card card-lg border-0" style="border:none!important;" >
-             <a href="/product/penguin-encounters" class="img-wrap card-img-top" data-abc="true"><img width="262px" height="275"  src="{{ asset('encounter/'.$img_to_present) }}"></a>
+             <a href="/product/animal-program-junior-keepers-9-12-years-old" class="img-wrap card-img-top" data-abc="true"><img width="262px" height="275"  src="{{ asset('program/'.$img_to_present) }}"></a>
              <figcaption class="info-wrap border-0">
                         
  
                             <div class="col-md-12 mt-4" style="text-align:center ">
  
-                                <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">Encounters: {{ $data_related[0]->animal_name }}</a></strong>
-                                <div class="price-wrap container mt-2">
-                                    <span class="price h5">From: ${{ $data_related[0]->price }}</span> <br> 
-                                </div>
-                            
+                                <strong><a href="/product/animal-program-junior-keepers-9-12-years-old" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">Animal Program: {{ $related[0]->program_name }}</a></strong>
+
                                 <div class="bottom-wrap container mt-4" style="background-color:">
                                     <a href="" style="text-decoration: none;">
-                                    <input type="button" value="BOOK NOW" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
+                                    <input type="button" style="text-align:center" value="BOOK NOW" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
                                     </a>
                                 </div>
                             </div>
@@ -182,48 +217,73 @@ a:hover{
               
          </figure>
     </div>
+    @php
+            $filename=$encounter[0]->filenames;
+        $filename=str_replace(array('"','[',']'),'',$filename);
+        $filename=explode(',',$filename);
+        // $count=count($filename);
+        $img_to_present=$filename[0];
+            @endphp
+    <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; "  >
+        <figure class="card card-lg border-0" style="border:none!important;" >
+            <a href="/product/sloth-encounters" class="img-wrap card-img-top" data-abc="true"><img width="262px" height="275"  src="{{ asset('encounter/'.$img_to_present) }}"></a>
+            <figcaption class="info-wrap border-0">
+                       
+
+                           <div class="col-md-12 mt-4" style="text-align:center ">
+
+                               <strong><a href="/product/sloth-encounters" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">Encounters: {{ $encounter[0]->animal_name }}</a></strong>
+                               <div class="price-wrap container mt-2">
+                                <span class="price h5">From: ${{ $encounter[0]->price }}</span> <br> 
+                                </div>
+                               <div class="bottom-wrap container mt-4" style="background-color:">
+                                   <a href="" style="text-decoration: none;">
+                                   <input type="button" style="text-align:center" value="BOOK NOW" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
+                                   </a>
+                               </div>
+                           </div>
+
+            </figcaption>
+             
+        </figure>
+   </div>
      </div> 
- 
- 
     </div>
-    @else
+@else
     <div class="adopt-an-animal" style="background-color: azure;">
         <div class="container">
         <div class="row">
             <div class="prefer title-product"><h2>Related Products</h2></div>
         </div>
         <div class="row mt-2">
-            
-            @foreach($animals as $related_data)
             @php
-            $name_product=strtolower($related_data->name);
-            $data=explode(" ",$name_product);
-            $name_product=implode('-',$data);
+            $filename=$related[0]->filenames;
+            $filename=str_replace(array('"','[',']'),'',$filename);
+            $filename=explode(',',$filename);
+            // $count=count($filename);
+            $img_to_present=$filename[0];
             @endphp
          <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; "  >
-             <figure class="card card-lg border-0" style="border:none!important;" >
-                 <a href="/product/{{ $name_product }}/{{ $related_data->id }}" class="img-wrap card-img-top" data-abc="true"><img width="262px" height="275"  src="{{ asset($related_data->img_path) }}"></a>
-                 <figcaption class="info-wrap border-0">
-                            
-     
-                                <div class="col-md-12 mt-4 border-0"style="text-align:center ">
-     
-                                    <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $related_data->name }}</a></strong>
-                                    <div class="price-wrap container mt-2">
-                                        <span class="price h5">${{ $related_data->price }}</span> <br> 
-                                    </div>
-                                
-                                    <div class="bottom-wrap container mt-4" style="background-color:">
-                                        <a href="" style="text-decoration: none;">
-                                        <input type="button" value="Adopt Me" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
-                                        </a>
-                                    </div>
-                                </div>
-                 </figcaption>
-                  
-             </figure>
-         </div>
-     @endforeach
+            <figure class="card card-lg border-0" style="border:none!important;" >
+                <a href="/product/animal-program-the-scoop-on-sloths" class="img-wrap card-img-top" data-abc="true"><img width="262px" height="275"  src="{{ asset('program/'.$img_to_present) }}"></a>
+                <figcaption class="info-wrap border-0">
+                           
+    
+                               <div class="col-md-12 mt-4" style="text-align:center ">
+    
+                                   <strong><a href="/product/animal-program-the-scoop-on-sloths" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">Animal Program: {{ $related[0]->program_name }}</a></strong>
+   
+                                   <div class="bottom-wrap container mt-4" >
+                                       <a href="" style="text-decoration: none;">
+                                       <input type="button" style="text-align:center" value="BOOK NOW" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
+                                       </a>
+                                   </div>
+                               </div>
+    
+                </figcaption>
+                 
+            </figure>
+       </div>
         </div>
     </div>
  </div>

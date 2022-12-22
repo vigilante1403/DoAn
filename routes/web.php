@@ -185,7 +185,23 @@ Route::prefix('product')->group(function(){
         $program_related=Animal_Program::where('program_name','The Scoop on Sloths')->get();
         return view('product.animal-encounter',compact('animal','encounter','data_related','program_related'));
         // return dd($encounter);
-});
+    });
+    Route::get('animal-program-{name}',function($name){
+        if($name=='the-scoop-on-sloths'){
+            $program=DB::table('animal-programs')->where('program_name','The Scoop on Sloths')->get();
+            $related=DB::table('animal-programs')->where('program_name','Junior Keepers (9 -12 years old)')->get();
+            $animal=DB::table('adopt-an-animal')->where('name',"Wally The Sloth")->get();
+            $encounter=DB::table('animal-encounters')->where('animal_name','Sloth')->get();
+            return view('product.animal-program',compact('animal','program','related','encounter'));
+        }
+        else{
+            $program=DB::table('animal-programs')->where('program_name','Junior Keepers (9 -12 years old)')->get();
+            $related=DB::table('animal-programs')->where('program_name','The Scoop on Sloths')->get();
+            $animals=Animal::inRandomOrder()->limit(2)->get();
+            return view('product.animal-program',compact('animals','program','related'));
+
+        }
+    });
 });
 
 //Reset Password

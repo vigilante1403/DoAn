@@ -387,6 +387,13 @@
                 // $count=count($filename);
                 $img_to_present=$filename[0];
             @endphp
+            @php
+            if($program->program_name=="The Scoop on Sloths"){
+                $name_product="the-scoop-on-sloths";
+            } else {
+                $name_product="junior-keepers-9-12-years-old";
+            }
+            @endphp
               <div class="col-lg-3" >
                
                 <div class="event-card" style="flex-direction:column">
@@ -401,7 +408,7 @@
                   <div class="event-card__content">
                     <h6 class="event-card__title mb-2">
                       <a
-                        href=""
+                        href="/product/animal-program-{{ $name_product }}"
                         class="t-link " style="color:#007faf"
                       >
                       <span><strong>Animal Program:&nbsp{{ $program->program_name }}</strong></span>

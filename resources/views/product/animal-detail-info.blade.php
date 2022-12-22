@@ -146,7 +146,7 @@ a:hover{
  
                             <div class="container mt-4 border-0"style="text-align:center ">
  
-                                <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $related_data->name }}</a></strong>
+                                <strong><a href="/product/{{ $name_product }}/{{ $related_data->id }}" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $related_data->name }}</a></strong>
                                 <div class="price-wrap container mt-2">
                                     <span class="price h5">${{ $related_data->price }}</span> <br> 
                                 </div>

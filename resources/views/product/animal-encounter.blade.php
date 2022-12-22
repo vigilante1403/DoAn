@@ -119,13 +119,13 @@ a:hover{
         
      <div class="col-sm-3" style="margin-right:0px; margin-bottom:40px; " >
          <figure class="card card-lg border-0" style="border:none!important;" >
-             <a href="#" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal[0]->img_path) }}"></a>
+             <a href="/product/wally-the-sloth/{{ $animal[0]->id }}" class="img-wrap card-img-top" data-abc="true"><img width="250px" height="275"  src="{{ asset($animal[0]->img_path) }}"></a>
              <figcaption class="info-wrap border-0">
                         <div class="row">
  
                             <div class="container mt-4 border-0"style="text-align:center ">
  
-                                <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $animal[0]->name }}</a></strong>
+                                <strong><a href="/product/wally-the-sloth/{{ $animal[0]->id }}" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $animal[0]->name }}</a></strong>
                                 <div class="price-wrap container mt-2">
                                     <span class="price h5"></span> <br> 
                                 </div>
@@ -166,7 +166,7 @@ a:hover{
  
                             <div class="col-md-12 mt-4" style="text-align:center ">
  
-                                <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">Encounters: {{ $data_related[0]->animal_name }}</a></strong>
+                                <strong><a href="/product/penguin-encounters" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">Encounters: {{ $data_related[0]->animal_name }}</a></strong>
                                 <div class="price-wrap container mt-2">
                                     <span class="price h5">From: ${{ $data_related[0]->price }}</span> <br> 
                                 </div>
@@ -208,7 +208,7 @@ a:hover{
      
                                 <div class="col-md-12 mt-4 border-0"style="text-align:center ">
      
-                                    <strong><a href="#" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $related_data->name }}</a></strong>
+                                    <strong><a href="/product/{{ $name_product }}/{{ $related_data->id }}" class="title" data-abc="true" style="font-size:20px;color:#2596be;text-decoration:none">{{ $related_data->name }}</a></strong>
                                     <div class="price-wrap container mt-2">
                                         <span class="price h5">${{ $related_data->price }}</span> <br> 
                                     </div>
