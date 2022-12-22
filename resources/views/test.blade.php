@@ -217,7 +217,7 @@
                   </li>
                   <li class="primary-menu__sub-list">
                     <a
-                      href="/error"
+                      href="/cam"
                       class="t-link primary-menu__sub-link text-capitalize"
                       >Peguin Cam</a
                     >

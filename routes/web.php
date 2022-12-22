@@ -101,6 +101,9 @@ Route::get('explore',function(){
     $posts = Post::all();
     return view('Explore',compact('posts'));
 });
+Route::get('cam',function(){
+    return view('penguincam');
+});
 Route::post('subscribe',[SubscribeController::class,'sendMail']);
 Route::post('comments',[CommentsController::class,'store'])->name('comments.store')->middleware('auth');
 Route::post('feedback',[FeedBackController::class,'store'])->name('feedbacks.store')->middleware('auth');

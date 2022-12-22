@@ -20,19 +20,19 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
   <!-- bootstrap 5  -->
-  <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
   <!-- fontawesome 5  -->
-  <link rel="stylesheet" href="../font-awesome.css" />
+  <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
   <!-- lineawesome font -->
-  <link rel="stylesheet" href="../line-awesome.css" />
+  <link rel="stylesheet" href="{{ asset('css/line-awesome.css') }}" />
   <!-- slick slider css -->
-  <link rel="stylesheet" href="../css/lib/slick.css" />
+  <link rel="stylesheet" href="{{ asset('css/lib/slick.css') }}" />
   <!-- Magnific Popup  -->
-  <link rel="stylesheet" href="../css/lib/magnific-popup.css" />
+  <link rel="stylesheet" href="{{ asset('css/lib/magnific-popup.css') }}" />
    <!-- Odometer -->
-   <link rel="stylesheet" href="../css/lib/odometer-theme-default.css">
+   <link rel="stylesheet" href="{{ asset('css/lib/odometer-theme-default.css') }}">
   <!-- main css -->
-  <link rel="stylesheet" href="../css/lib/test.project.css">
+  <link rel="stylesheet" href="{{ asset('css/test.project.css') }}">
 </head>
 <style>
   *
@@ -301,9 +301,9 @@
           <div class="row g-0 align-items-center">
             <div class="col-6 col-lg-2">
               <!-- Logo  -->
-              <a href="index" class="logo">
+              <a href="/" class="logo">
                 <img
-                  src="../../../im/jenkinsons-logo.png"
+                  src="{{ asset('img/jenkinsons-logo.png') }}"
                   alt="viserhyip"
                   class="img-fluid logo__is"
                 />
@@ -334,7 +334,7 @@
               <!-- Primary Menu  -->
               <ul class="list primary-menu">
                 <li class="primary-menu__list">
-                  <a href="/index" class="primary-menu__link text-capitalize">
+                  <a href="/" class="primary-menu__link text-capitalize">
                     Home
                   </a>
                 </li>
@@ -344,7 +344,7 @@
                   <ul class="primary-menu__sub">
                     <li class="primary-menu__sub-list">
                       <a
-                        href="OurMission"
+                        href="/our-mission"
                         class="t-link primary-menu__sub-link text-capitalize"
                       >
                         Our Mission
@@ -352,7 +352,7 @@
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="Experiences"
+                        href="/experiences"
                         class="t-link primary-menu__sub-link text-capitalize"
                       >
                       Experiences
@@ -360,7 +360,7 @@
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="Education"
+                        href="/education"
                         class="t-link primary-menu__sub-link text-capitalize"
                       >
                       Education
@@ -370,39 +370,39 @@
                 </li>
                 
                 <li class="primary-menu__list has-sub ">
-                  <a href="/Service" class="primary-menu__link text-capitalize">Service</a>
+                  <a href="/services" class="primary-menu__link text-capitalize">Service</a>
                   <ul class="primary-menu__sub">
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/Adopt-An-Animal"
+                        href="/services/adopt-an-animal"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Adopt-An-Animal</a
                       >
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/Animal-Encounters"
+                        href="/services/animal-encounters"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Animal-Encounters</a
                       >
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/Promotions"
+                        href="/services/promotions"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Promotions
                       </a>
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/Feeding-Schedule"
+                        href="/services/feeding-schedule"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Feeding-Schedule
                       </a>
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/Proposals"
+                        href="/services/proposals"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Proposals</a
                       >
@@ -410,25 +410,25 @@
                   </ul>
                 </li>
                 <li class="primary-menu__list has-sub ">
-                  <a href="/Explore" class="primary-menu__link text-capitalize">Explore</a>
+                  <a href="/explore" class="primary-menu__link text-capitalize">Explore</a>
                   <ul class="primary-menu__sub">
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/Exhibits"
+                        href="/exhibits"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Animals & Exhibits</a
                       >
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/PeguinCam"
+                        href="/cam"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Peguin Cam</a
                       >
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/AnimalArt"
+                        href="/animal-art"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Animal Art</a
                       >
@@ -436,7 +436,7 @@
                   </ul>
                 </li>
                 <li class="primary-menu__list has-sub ">
-                  <a href="/Gallery" class="primary-menu__link text-capitalize">Gallery</a>
+                  <a href="/viewgallery" class="primary-menu__link text-capitalize">Gallery</a>
                 </li>
                 <li class="primary-menu__list has-sub">
                   <a
@@ -445,19 +445,31 @@
                     >Contact</a
                   >
                 </li>
-                <li class="primary-menu__list has-sub ">
-                  <a href="#" class="primary-menu__link text-capitalize">Others</a>
-                  <ul class="primary-menu__sub">
-                    <li class="primary-menu__sub-list">
-                      <a
-                        href="/error"
-                        class="t-link primary-menu__sub-link text-capitalize"
-                      >
-                        404 
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+                @if(Auth::user()&&Auth::user()->authorize==1)
+              <li class="primary-menu__list has-sub">
+                <a href="#" class="primary-menu__link text-capitalize">Others</a>
+                <ul class="primary-menu__sub">
+                 
+                  <li class="primary-menu__sub-list">
+                    <a
+                      href="/admin/home"
+                      class="t-link primary-menu__sub-link text-capitalize"
+                    >
+                      Manage
+                    </a>
+                  </li>
+                  
+                  <li class="primary-menu__sub-list">
+                    <a
+                      href="/error"
+                      class="t-link primary-menu__sub-link text-capitalize"
+                    >
+                      404 
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              @endif
                 <li class="primary-menu__list has-sub d-none d-lg-block">
                   <a
                     href="#"
@@ -494,13 +506,31 @@
               <!-- Primary Menu End -->
 
               <!-- User Login  -->
-              <div class="mx-3 me-lg-0">
-                <ul class="list primary-menu primary-menu--alt">
-                  <li class="primary-menu__list has-sub text-center">
-                    <a href="sign-up" class="btn btn--md btn--base w-100"> Sign Up </a>
-                  </li>
-                </ul>
-              </div>
+              @if(!Auth::check())
+            <div class="mx-3 ms-lg-auto me-lg-0">
+              <ul class="list primary-menu primary-menu--alt">
+                <li class="primary-menu__list text-center">
+                  <a href="{{ route('register') }}" class="btn btn--md btn--base w-100"> Sign Up </a>
+                </li>
+              </ul>
+            </div>
+            @else 
+            <div class="mx-3 ms-lg-auto me-lg-0">
+              <ul class="list primary-menu primary-menu--alt">
+                
+                <li class="primary-menu__list text-center">
+                  {{-- Hello{{ $name[0]['name'] }} --}}
+                  Hello {{ Auth::user()->name }}
+                </li>
+                
+                <li class="primary-menu__list text-center">
+                  <a href="/logout">Logout</a>
+                </li>
+                
+              </ul>
+            </div>
+            
+            @endif
               <!-- User Login End -->
             </nav>
                 <!-- Navigation End -->
@@ -512,7 +542,7 @@
 
 
      <!-- Banner  -->
-<div class="banner" style="background-image: url(../img/banner-2.jpeg)">
+<div class="banner" style="background-image: url({{ asset('img/banner-2.jpeg') }})">
   <div class="banner__content">
     <div class="container">
       <div class="row g-3 justify-content-center">
@@ -524,20 +554,20 @@
             style="--gap: 2rem"
           >
             <li class="list--row__item breadcrumbs__item">
-              <a href="/index" class="t-link breadcrumbs__link text--white">
+              <a href="/" class="t-link breadcrumbs__link text--white">
                 Home
               </a>
             </li>
             <li class="list--row__item breadcrumbs__item">
               <a
-                href="/Explore"
+                href="/explore"
                 class="t-link breadcrumbs__link text--white"
               >
                 Explore
               </a>
             </li>
             <li class="list--row__item breadcrumbs__item">
-                <a href="Peguincam" class="t-link breadcrumbs__link text--white">
+                <a href="/cam" class="t-link breadcrumbs__link text--white">
                   Peguin Cam
                 </a>
               </li>
@@ -562,7 +592,7 @@
                   <div class="msg">OH!<span class="triangle"></span></div>
               </div>
               <h2 class="h1">Sorry! Page not found</h2>
-              <h6 style="color: #07B3F9;margin-bottom:5%;">Go to back <a href="/index">Home</a></h6>
+              <h6 style="color: #07B3F9;margin-bottom:5%;">Go to back <a href="/">Home</a></h6>
           </div>
       </div>
   </div>
@@ -779,21 +809,21 @@
 <!-- Footer End -->
         <!-- jQuery library -->
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/js/lib/jquery-3.6.0.min.js"></script>
-    <!-- bootstrap 5 js -->
-    <script src="../js/lib/bootstrap.bundle.min.js"></script>
-    <!-- slick  slider js -->
-    <script src="../js/lib/slick.js"></script>
-     <!-- Viewport -->
-     <script src="../js/lib/viewport.js"></script>
-    <!-- Magnific Popup -->
-    <script src="../js/lib/jquery.magnific-popup.js"></script>
-    <!-- Filterizer -->
-    <script src="../js/lib/jquery.filterizr.min.js"></script>
-    <!-- Odometer -->
-    <script src="../js/lib/odometer.js"></script>
-  
-      <!--main js-->
-      <script src="../js/app.js"></script>
+    
+      <script src="{{ asset('js/lib/jquery-3.6.0.min.js') }}"></script>
+      <!-- bootstrap 5 js -->
+      <script src="{{ asset('js/app.js') }}"></script>
+      <script src="{{ asset('js/lib/bootstrap.bundle.min.js') }}"></script>
+      <!-- slick  slider js -->
+      <script src="{{ asset('js/lib/slick.js') }}"></script>
+       <!-- Viewport -->
+       <script src="{{ asset('js/lib/viewport.js') }}"></script>
+      <!-- Magnific Popup -->
+      <script src="{{ asset('js/lib/jquery.magnific-popup.js') }}"></script>
+      <!-- Filterizer -->
+      <script src="{{ asset('js/lib/jquery.filterizr.min.js') }}"></script>
+      <!-- Odometer -->
+      <script src="{{ asset('js/lib/odometer.js') }}"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
       <script>
         function randomNum() {
