@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="bottom-wrap container mt-4" style="background-color:">
                                     <a href="" style="text-decoration: none;">
-                                    <input type="button" value="Adopt Me" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
+                                    <input type="button" style="text-align:center" value="Adopt Me" style="background-color: #2596be;border:none;color:white;height:54px;width:150.64px;font-weight:bold;font-size:20px">
                                     </a>
                                 </div>
                             </div>
