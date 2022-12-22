@@ -609,7 +609,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="OurMission.html"
+                href="/our-mision"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Our Mission
@@ -617,7 +617,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Education.html"
+                href="/education"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Education
@@ -625,7 +625,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="PeguinCam.html"
+                href="/cam"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -633,7 +633,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="../Gallery.html"
+                href="/viewgallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -641,7 +641,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="../contact.html"
+                href="/contact"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -656,7 +656,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="Adopt-An-Animal.html"
+                href="/services/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -664,7 +664,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Animal-Encounters.html"
+                href="/services/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -672,7 +672,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Promotions.html"
+                href="/services/promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -680,7 +680,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Feeding-Schedule.html"
+                href="/services/feeding-schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -688,7 +688,15 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Proposals.html"
+                href="/services/programs"
+                class="t-link t-link--base text--white d-inline-block"
+              >
+               Animal Programs
+              </a>
+            </li>
+            <li class="list--column__item">
+              <a
+                href="/services/proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals
@@ -764,7 +772,7 @@
 
 
         <!-- jQuery library -->
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <!-- bootstrap 5 js -->
     <script src="{{ asset('js/has-sub.js') }}"></script>
       <script src="{{ asset('js/lib/jquery-3.6.0.min.js') }}"></script>

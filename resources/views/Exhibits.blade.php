@@ -200,7 +200,7 @@
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/error"
+                        href="/cam"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Peguin Cam</a
                       >
@@ -405,7 +405,7 @@
         <div class="event-card">
           <div class="event-card__img">
             <img
-              src="../img/exhibit-image-2.jpeg"
+              src="{{ asset('img/exhibit-image-2.jpeg') }}"
               alt="image"
               class="event-card__img-is"
             />
@@ -433,7 +433,7 @@
         <div class="event-card">
           <div class="event-card__img">
             <img
-              src="../img/exhibit-image-3.jpeg"
+              src="{{ asset('img/exhibit-image-3.jpeg') }}"
               alt="image"
               class="event-card__img-is"
             />
@@ -460,7 +460,7 @@
         <div class="event-card">
           <div class="event-card__img">
             <img
-              src="../img/exhibit-image-4.jpeg"
+              src="{{ asset('img/exhibit-image-4.jpeg') }}"
               alt="image"
               class="event-card__img-is"
             />
@@ -524,7 +524,7 @@
                
                 <div class="blog-post__content">
                   <h4 class="blog-post__title">
-                    <a href="/error" class="t-link blog-post__title-link">
+                    <a href="/cam" class="t-link blog-post__title-link">
                       Peguin Cam
                     </a>
                   </h4>
@@ -707,7 +707,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/error"
+                href="/cam"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -715,7 +715,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/gallery"
+                href="/viewgallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -738,7 +738,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="/adopt-an-animal"
+                href="/services/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -746,7 +746,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/animal-encounters"
+                href="/services/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -754,7 +754,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Promotions"
+                href="/services/promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -762,7 +762,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Feeding-Schedule"
+                href="/services/feeding-schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -770,7 +770,15 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Proposals"
+                href="/services/programs"
+                class="t-link t-link--base text--white d-inline-block"
+              >
+               Animal Programs
+              </a>
+            </li>
+            <li class="list--column__item">
+              <a
+                href="/services/proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

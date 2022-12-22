@@ -209,7 +209,7 @@
                     </li>
                     <li class="primary-menu__sub-list">
                       <a
-                        href="/error"
+                        href="/cam"
                         class="t-link primary-menu__sub-link text-capitalize"
                         >Peguin Cam</a
                       >
@@ -590,7 +590,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/error"
+                href="/cam"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -598,7 +598,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/gallery"
+                href="/viewgallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -621,7 +621,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="/adopt-an-animal"
+                href="/services/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -629,7 +629,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/animal-encounters"
+                href="/services/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -637,7 +637,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Promotions"
+                href="/services/promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -645,7 +645,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Feeding-Schedule"
+                href="/services/feeding-schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -653,7 +653,15 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Proposals"
+                href="/services/programs"
+                class="t-link t-link--base text--white d-inline-block"
+              >
+               Animal Programs
+              </a>
+            </li>
+            <li class="list--column__item">
+              <a
+                href="/services/proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals
