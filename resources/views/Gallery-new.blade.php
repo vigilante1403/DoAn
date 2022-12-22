@@ -10,7 +10,7 @@
     <!-- favicon -->
     <link
       rel="icon"
-      href="assets/images/favicon.png"
+      href="{{ asset('images/favicon.png') }}"
       sizes="16x16"
       type="image/png"
     />
@@ -34,303 +34,75 @@
   <!-- main css -->
   <link rel="stylesheet" href="{{ asset('css/test.project.css') }}">
 </head>
-<style>
-  *
-{
-  font-family: 'PT Sans Caption', sans-serif, 'arial', 'Times New Roman';
-}
-/* Error Page */
-    .error .clip .shadow
-    {
-        height: 180px;  /*Contrall*/
-    }
-    .error .clip:nth-of-type(2) .shadow
-    {
-        width: 130px;   /*Contrall play with javascript*/ 
-    }
-    .error .clip:nth-of-type(1) .shadow, .error .clip:nth-of-type(3) .shadow
-    {
-        width: 250px; /*Contrall*/
-    }
-    .error .digit
-    {
-        width: 150px;   /*Contrall*/
-        height: 150px;  /*Contrall*/
-        line-height: 150px; /*Contrall*/
-        font-size: 120px;
-        font-weight: bold;
-    }
-    .error h2   /*Contrall*/
-    {
-        font-size: 32px;
-    }
-    .error .msg /*Contrall*/
-    {
-        top: -190px;
-        left: 30%;
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
-        font-size: 32px;
-    }
-    .error span.triangle    /*Contrall*/
-    {
-        top: 70%;
-        right: 0%;
-        border-left: 20px solid #535353;
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-    }
-
-
-    .error .container-error-404
-    {
-      margin-top: 5%;
-        position: relative;
-        height: 250px;
-        padding-top: 40px;
-    }
-    .error .container-error-404 .clip
-    {
-        display: inline-block;
-        transform: skew(-45deg);
-    }
-    .error .clip .shadow
-    {
-        
-        overflow: hidden;
-    }
-    .error .clip:nth-of-type(2) .shadow
-    {
-        overflow: hidden;
-        position: relative;
-        box-shadow: inset 20px 0px 20px -15px rgba(150, 150, 150,0.8), 20px 0px 20px -15px rgba(150, 150, 150,0.8);
-    }
-    
-    .error .clip:nth-of-type(3) .shadow:after, .error .clip:nth-of-type(1) .shadow:after
-    {
-        content: "";
-        position: absolute;
-        right: -8px;
-        bottom: 0px;
-        z-index: 9999;
-        height: 100%;
-        width: 10px;
-        background: linear-gradient(90deg, transparent, rgba(173,173,173, 0.8), transparent);
-        border-radius: 50%;
-    }
-    .error .clip:nth-of-type(3) .shadow:after
-    {
-        left: -8px;
-    }
-    .error .digit
-    {
-        position: relative;
-        top: 8%;
-        color: white;
-        background: #07B3F9;
-        border-radius: 50%;
-        display: inline-block;
-        transform: skew(45deg);
-    }
-    .error .clip:nth-of-type(2) .digit
-    {
-        left: -10%;
-    }
-    .error .clip:nth-of-type(1) .digit
-    {
-        right: -20%;
-    }.error .clip:nth-of-type(3) .digit
-    {
-        left: -20%;
-    }    
-    .error h2
-    {
-        color: #A2A2A2;
-        font-weight: bold;
-        padding-bottom: 20px;
-    }
-    .error .msg
-    {
-        position: relative;
-        z-index: 9999;
-        display: block;
-        background: #535353;
-        color: #A2A2A2;
-        border-radius: 50%;
-        font-style: italic;
-    }
-    .error .triangle
-    {
-        position: absolute;
-        z-index: 999;
-        transform: rotate(45deg);
-        content: "";
-        width: 0; 
-        height: 0; 
-    }
-
-/* Error Page */
-@media(max-width: 767px)
-{
-    /* Error Page */
-            .error .clip .shadow
-            {
-                height: 100px;  /*Contrall*/
-            }
-            .error .clip:nth-of-type(2) .shadow
-            {
-                width: 80px;   /*Contrall play with javascript*/ 
-            }
-            .error .clip:nth-of-type(1) .shadow, .error .clip:nth-of-type(3) .shadow
-            {
-                width: 100px; /*Contrall*/
-            }
-            .error .digit
-            {
-                width: 80px;   /*Contrall*/
-                height: 80px;  /*Contrall*/
-                line-height: 80px; /*Contrall*/
-                font-size: 52px;
-            }
-            .error h2   /*Contrall*/
-            {
-                font-size: 24px;
-            }
-            .error .msg /*Contrall*/
-            {
-                top: -110px;
-                left: 15%;
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                font-size: 18px;
-            }
-            .error span.triangle    /*Contrall*/
-            {
-                top: 70%;
-                right: -3%;
-                border-left: 10px solid #535353;
-                border-top: 8px solid transparent;
-                border-bottom: 8px solid transparent;
-            }
-.error .container-error-404
-  {
-    height: 150px;
-  }
-        /* Error Page */
-}
-
-/*--------------------------------------------Framework --------------------------------*/
-
-.overlay { position: relative; z-index: 20; } /*done*/
-    .ground-color { background: white; }  /*done*/
-    .item-bg-color { background: #EAEAEA } /*done*/
-    
-    /* Padding Section*/
-        .padding-top { padding-top: 10px; } /*done*/
-        .padding-bottom { padding-bottom: 10px; }   /*done*/
-        .padding-vertical { padding-top: 10px; padding-bottom: 10px; }
-        .padding-horizontal { padding-left: 10px; padding-right: 10px; }
-        .padding-all { padding: 10px; }   /*done*/
-
-        .no-padding-left { padding-left: 0px; }    /*done*/
-        .no-padding-right { padding-right: 0px; }   /*done*/
-        .no-vertical-padding { padding-top: 0px; padding-bottom: 0px; }
-        .no-horizontal-padding { padding-left: 0px; padding-right: 0px; }
-        .no-padding { padding: 0px; }   /*done*/
-    /* Padding Section*/
-
-    /* Margin section */
-        .margin-top { margin-top: 10px; }   /*done*/
-        .margin-bottom { margin-bottom: 10px; } /*done*/
-        .margin-right { margin-right: 10px; } /*done*/
-        .margin-left { margin-left: 10px; } /*done*/
-        .margin-horizontal { margin-left: 10px; margin-right: 10px; } /*done*/
-        .margin-vertical { margin-top: 10px; margin-bottom: 10px; } /*done*/
-        .margin-all { margin: 10px; }   /*done*/
-        .no-margin { margin: 0px; }   /*done*/
-
-        .no-vertical-margin { margin-top: 0px; margin-bottom: 0px; }
-        .no-horizontal-margin { margin-left: 0px; margin-right: 0px; }
-
-        .inside-col-shrink { margin: 0px 20px; }    /*done - For the inside sections that has also Title section*/ 
-    /* Margin section */
-
-    hr
-    { margin: 0px; padding: 0px; border-top: 1px dashed #999; }
-/*--------------------------------------------FrameWork------------------------*/
-
-</style>
 <body>
-   <!-- preloader start -->
-   <div class="preloader">
-    <div class="preloader__loader">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <!-- preloader end -->
-  
-  <!-- Back To Top -->
-  <div class="back-to-top">
-    <span class="back-top">
-      <i class="las la-angle-double-up"></i>
-    </span>
-  </div>
-  <!-- Back To Top End -->
-
-  <!-- search Popup -->
-  <div class="body-overlay" id="body-overlay"></div>
-  <div class="search-popup" id="search-popup">
-    <form action="#" class="search-form">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search....." />
+       <!-- preloader start -->
+       <div class="preloader">
+        <div class="preloader__loader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <button type="submit" class="submit-btn xl-text">
-        <i class="las la-search"></i>
-      </button>
-    </form>
-  </div>
-  <!--search Popup -->
-
-    <header class="header-fixed header--primary">
-        <div class="container">
-          <div class="row g-0 align-items-center">
-            <div class="col-6 col-lg-2">
-              <!-- Logo  -->
-              <a href="/" class="logo">
-                <img
-                  src="{{ asset('img/jenkinsons-logo.png') }}"
-                  alt="viserhyip"
-                  class="img-fluid logo__is"
-                />
-              </a>
-              <!-- Logo End -->
-            </div>
-            <div class="col-6 col-lg-10">
-              <div class="nav-container">
-                <!-- Navigation Toggler  -->
-                <div class="d-flex justify-content-end align-items-center d-lg-none">
-                  <a
-                    href="#"
-                    class="primary-menu__link t-link search--toggler text-center text--white border-bottom-0"
-                  >
-                    <i class="las la-search"></i>
-                  </a>
-                  <button
-                    type="button"
-                    class="btn btn--sqr btn--base nav--toggle text--white"
-                  >
-                    <i class="las la-bars"></i>
-                  </button>
-                </div>
-                <!-- Navigation Toggler End -->
+      <!-- preloader end -->
       
-                 <!-- Navigation  -->
-            <nav class="navs">
+      <!-- Back To Top -->
+      <div class="back-to-top">
+        <span class="back-top">
+          <i class="las la-angle-double-up"></i>
+        </span>
+      </div>
+      <!-- Back To Top End -->
+  
+      <!-- search Popup -->
+      <div class="body-overlay" id="body-overlay"></div>
+      <div class="search-popup" id="search-popup">
+        <form action="#" class="search-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search....." />
+          </div>
+          <button type="submit" class="submit-btn xl-text">
+            <i class="las la-search"></i>
+          </button>
+        </form>
+      </div>
+      <!--search Popup -->
+      <!-- Header -->
+  <header class="header-fixed header--primary">
+    <div class="container">
+      <div class="row g-0 align-items-center">
+        <div class="col-6 col-lg-2">
+          <!-- Logo  -->
+          <a href="/" class="logo">
+            <img
+              src="{{ asset('img/jenkinsons-logo.png') }}"
+              alt="viserhyip"
+              class="img-fluid logo__is"
+            />
+          </a>
+          <!-- Logo End -->
+        </div>
+        <div class="col-6 col-lg-10">
+          <div class="nav-container">
+            <!-- Navigation Toggler  -->
+            <div class="d-flex justify-content-end align-items-center d-lg-none">
+              <a
+                href="#"
+                class="primary-menu__link t-link search--toggler text-center text--white border-bottom-0"
+              >
+                <i class="las la-search"></i>
+              </a>
+              <button
+                type="button"
+                class="btn btn--sqr btn--base nav--toggle text--white"
+              >
+                <i class="las la-bars"></i>
+              </button>
+            </div>
+            <!-- Navigation Toggler End -->
+  
+             <!-- Navigation  -->
+             <nav class="navs">
               <!-- Primary Menu  -->
               <ul class="list primary-menu">
                 <li class="primary-menu__list">
@@ -453,30 +225,30 @@
                   >
                 </li>
                 @if(Auth::user()&&Auth::user()->authorize==1)
-              <li class="primary-menu__list has-sub">
-                <a href="#" class="primary-menu__link text-capitalize">Others</a>
-                <ul class="primary-menu__sub">
-                 
-                  <li class="primary-menu__sub-list">
-                    <a
-                      href="/admin/home"
-                      class="t-link primary-menu__sub-link text-capitalize"
-                    >
-                      Manage
-                    </a>
-                  </li>
-                  
-                  <li class="primary-menu__sub-list">
-                    <a
-                      href="/error"
-                      class="t-link primary-menu__sub-link text-capitalize"
-                    >
-                      404 
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              @endif
+                <li class="primary-menu__list has-sub">
+                  <a href="#" class="primary-menu__link text-capitalize">Others</a>
+                  <ul class="primary-menu__sub">
+                   
+                    <li class="primary-menu__sub-list">
+                      <a
+                        href="/admin/home"
+                        class="t-link primary-menu__sub-link text-capitalize"
+                      >
+                        Manage
+                      </a>
+                    </li>
+                    
+                    <li class="primary-menu__sub-list">
+                      <a
+                        href="/error"
+                        class="t-link primary-menu__sub-link text-capitalize"
+                      >
+                        404 
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                @endif
                 <li class="primary-menu__list has-sub d-none d-lg-block">
                   <a
                     href="#"
@@ -541,20 +313,21 @@
               <!-- User Login End -->
             </nav>
                 <!-- Navigation End -->
-              </div>
-            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
 
 
-     <!-- Banner  -->
-<div class="banner" style="background-image: url({{ asset('img/banner-2.jpeg') }})">
+    <!-- Banner  -->
+<div class="banner" style="background-image: url({{ asset('img/banner-3.jpeg') }})">
   <div class="banner__content">
     <div class="container">
       <div class="row g-3 justify-content-center">
         <div class="col-lg-10 text-center">
-          <h2 class="mt-0 text--white">Explore</h2>
+          <h2 class="mt-0 text--white">Aquarium Gallery</h2>
           <!-- Breadcrumbs  -->
           <ul
             class="list list--row breadcrumbs justify-content-center"
@@ -567,17 +340,12 @@
             </li>
             <li class="list--row__item breadcrumbs__item">
               <a
-                href="/explore"
+                href="/viewgallery"
                 class="t-link breadcrumbs__link text--white"
               >
-                Explore
+                Gallery
               </a>
             </li>
-            <li class="list--row__item breadcrumbs__item">
-                <a href="/cam" class="t-link breadcrumbs__link text--white">
-                  Peguin Cam
-                </a>
-              </li>
           </ul>
           <!-- Breadcrumbs End -->
         </div>
@@ -587,24 +355,263 @@
 </div>
 <!-- Banner End -->
 
-
-     <!-- Error Page -->
-     <div class="error">
-      <div class="container-floud">
-          <div class="col-xs-12 ground-color text-center">
-              <div class="container-error-404">
-                  <div class="clip"><div class="shadow"><span class="digit thirdDigit"></span></div></div>
-                  <div class="clip"><div class="shadow"><span class="digit secondDigit"></span></div></div>
-                  <div class="clip"><div class="shadow"><span class="digit firstDigit"></span></div></div>
-                  <div class="msg">OH!<span class="triangle"></span></div>
-              </div>
-              <h2 class="h1">Sorry! Page not found</h2>
-              <h6 style="color: #07B3F9;margin-bottom:5%;">Go to back <a href="/">Home</a></h6>
-          </div>
-      </div>
-  </div>
-<!-- Error Page -->
     
+    <!-- Zoo Gallery  -->
+    <div class="section--top">
+        <div class="section__head">
+          <div class="container">
+            <div class="row g-4 show-img">
+              @foreach($pictures as $picture)
+              <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                  <img
+                    src="{{ asset($picture->img) }}"
+                    alt="image"
+                    class="gallery-card__img"
+                  />
+                  <div class="gallery-card__overlay">
+                    <a
+                      href="{{ asset($picture->img) }}"
+                      class="t-link gallery-card__link show-img"
+                    >
+                      <i class="las la-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <nav>
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Zoo Gallery End -->
+
+
+ <!-- Feedback Section  -->
+ <div class="feedback-section">
+    <div class="section feedback-section__wrapper">
+      <div class="section__head">
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-10 col-xl-6">
+              <div class="text-center">
+                <span class="section__particles">
+                  <span class="section__subtitle section__subtitle-dash text--white"> Feedback </span>
+                </span>
+                <h2 class="section__title text--white">
+                  What our visitor says about <span>Jenkinson's</span>
+                </h2>
+                <p class="section__para mx-auto text--white mb-0">
+                  Your gift to Jenkinson;s Aquarium makes programs like these possible and supports animals here and around the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="feedback-slider">
+              <div class="feedback-slider__item">
+                <div class="feedback-card">
+                  <div class="feedback-card__head">
+                    <div class="user user--xl">
+                      <img
+                        src="{{ asset('images/people-3.jpg') }}"
+                        alt="image"
+                        class="user__img"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mt-0 mb-1">Robarts Jane</h5>
+                      <span class="d-block sm-text"> Visitor </span>
+                    </div>
+                  </div>
+                  <div class="feedback-card__body">
+                    <p class="feedback-card__text mb-0">
+                      By leading and supporting critical conservation projects in the field, encouraging and leveraging the power of thousands of visitors, and serving as an “ark” for endangered species, Viserlife Zoo has played an integral role in a variety of conservation efforts across numerous species.
+                    </p>
+                  </div>
+                  <div class="feedback-card__footer">
+                    <div class="feedback-card__quote-icon">
+                   <i class="fas fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card">
+                  <div class="feedback-card__head">
+                    <div class="user user--xl">
+                      <img
+                        src="{{ asset('images/people-4.jpg') }}"
+                        alt="image"
+                        class="user__img"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mt-0 mb-1">Peter parker</h5>
+                      <span class="d-block sm-text"> Visitor </span>
+                    </div>
+                  </div>
+                  <div class="feedback-card__body">
+                    <p class="feedback-card__text mb-0">
+                      In addition to housing endangered animals—some extinct in the wild—and supporting conservation efforts around the world, Viserlife Zoo helps create empathy and understanding for wildlife through programs like the UNLESS Contest, which has inspired tens of thousands of students over the past decade to learn about and create advocacy campaigns to make a lasting impact on an endangered species of their choosing. 
+                    </p>
+                  </div>
+                  <div class="feedback-card__footer">
+                    <div class="feedback-card__quote-icon">
+                   <i class="fas fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card">
+                  <div class="feedback-card__head">
+                    <div class="user user--xl">
+                      <img
+                        src="{{ asset('images/people-5.jpg') }}"
+                        alt="image"
+                        class="user__img"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mt-0 mb-1">Tony Stark</h5>
+                      <span class="d-block sm-text"> Visitor </span>
+                    </div>
+                  </div>
+                  <div class="feedback-card__body">
+                    <p class="feedback-card__text mb-0">
+                      To date, the UNLESS Contest has resulted in hundreds of trees planted in Brazil, thousands of signatures in support of a wildlife bridge, and dollars raised to support our partners in the field.
+                    </p>
+                  </div>
+                  <div class="feedback-card__footer">
+                    <div class="feedback-card__quote-icon">
+                   <i class="fas fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-slider__item">
+                <div class="feedback-card">
+                  <div class="feedback-card__head">
+                    <div class="user user--xl">
+                      <img
+                        src="{{ asset('images/people-6.jpg') }}"
+                        alt="image"
+                        class="user__img"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mt-0 mb-1">Steven Roger</h5>
+                      <span class="d-block sm-text"> Visitor </span>
+                    </div>
+                  </div>
+                  <div class="feedback-card__body">
+                    <p class="feedback-card__text mb-0">
+                      Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                      rhoncus. Maecenas tempus tellus eget condimentum rhoncus sem
+                    </p>
+                  </div>
+                  <div class="feedback-card__footer">
+                    <div class="feedback-card__quote-icon">
+                   <i class="fas fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Feedback Section End -->
+
+  <!-- Client Section Slider -->
+  <div class="section--sm">
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="client-slider">
+              <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/American-Littoral-Society.png') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/Clean-Ocean-Action-300x294.jpg') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/Gotham-Whale-.png') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/reclam.png') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/SANCCOB-.png') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/Sea-Turtle-Recovery.jpg') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/Ocean-Conservancy.png') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            <div class="client-slider__item">
+                <div class="client-card">
+                    <img src="{{ asset('img/Turtle-Survival-Alliance.jpg') }}" alt="image" class="client-card__img">
+                </div>
+            </div>
+            </div>
+              </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Client Section End -->
+
+         
 <!-- Footer  -->
 
 <footer class="footer">
@@ -662,7 +669,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="/OurMission"
+                href="sub-html/OurMission.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Our Mission
@@ -670,7 +677,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Education"
+                href="sub-html/Education.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Education
@@ -678,7 +685,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/PeguinCam"
+                href="sub-html/PeguinCam.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -686,7 +693,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Gallery"
+                href="Gallery.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -694,7 +701,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/contact"
+                href="contact.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -709,7 +716,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="Adopt-An-Animal"
+                href="sub-html/Adopt-An-Animal.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -717,7 +724,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Animal-Encounters"
+                href="sub-html/Animal-Encounters.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -725,7 +732,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Promotions"
+                href="sub-html/Promotions.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -733,7 +740,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Feeding-Schedule"
+                href="sub-html/Feeding-Schedule.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -741,7 +748,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/Proposals"
+                href="sub-html/Proposals.html"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals
@@ -815,8 +822,9 @@
 </footer>
 <!-- Footer End -->
         <!-- jQuery library -->
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/js/lib/jquery-3.6.0.min.js"></script>
-    
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap 5 js -->
+    <script src="{{ asset('js/has-sub.js') }}"></script>
       <script src="{{ asset('js/lib/jquery-3.6.0.min.js') }}"></script>
       <!-- bootstrap 5 js -->
       <script src="{{ asset('js/app.js') }}"></script>
@@ -831,53 +839,6 @@
       <script src="{{ asset('js/lib/jquery.filterizr.min.js') }}"></script>
       <!-- Odometer -->
       <script src="{{ asset('js/lib/odometer.js') }}"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
-      <script>
-        function randomNum() {
-        "use strict";
-        return Math.floor(Math.random() * 9) + 1;
-      }
-      var loop1,
-        loop2,
-        loop3,
-        time = 30,
-        i = 0,
-        number,
-        selector3 = document.querySelector(".thirdDigit"),
-        selector2 = document.querySelector(".secondDigit"),
-        selector1 = document.querySelector(".firstDigit");
-      loop3 = setInterval(function () {
-        "use strict";
-        if (i > 40) {
-          clearInterval(loop3);
-          selector3.textContent = 4;
-        } else {
-          selector3.textContent = randomNum();
-          i++;
-        }
-      }, time);
-      loop2 = setInterval(function () {
-        "use strict";
-        if (i > 80) {
-          clearInterval(loop2);
-          selector2.textContent = 0;
-        } else {
-          selector2.textContent = randomNum();
-          i++;
-        }
-      }, time);
-      loop1 = setInterval(function () {
-        "use strict";
-        if (i > 100) {
-          clearInterval(loop1);
-          selector1.textContent = 4;
-        } else {
-          selector1.textContent = randomNum();
-          i++;
-        }
-      }, time);
-      
-      </script>
      
     </body>
   

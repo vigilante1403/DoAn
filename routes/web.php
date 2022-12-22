@@ -51,12 +51,13 @@ Route::get('contact',function(){
 });
 Route::get('/viewgallery',function(){
     $pictures=Gallery::all();
-    $datas=[];
-    foreach($pictures as $picture){
-        array_push($datas,$picture->img);
-    }
-    $datas=array_chunk($datas,2);
-    return view('gallery',compact('datas'));
+    // $datas=[];
+    // foreach($pictures as $picture){
+    //     array_push($datas,$picture->img);
+    // }
+    // $datas=array_chunk($datas,2);
+    // return view('gallery',compact('datas'));
+    return view('Gallery-new',compact('pictures'));
     // $i=0;
     // return dd($datas[$i][0]);
 })->name('gallery');
