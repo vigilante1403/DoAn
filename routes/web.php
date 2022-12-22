@@ -117,19 +117,19 @@ Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 Route::prefix('services')->group(function(){
     Route::get('adopt-an-animal',function(){
         $animals=Animal::all();
-        return view('adopt-an-animal',compact('animals'));
+        return view('adopt-an-animal-new',compact('animals'));
     });
     Route::get('animal-encounters',function(){
         $encounters=Animal_Encounter::all();
-        return view('animal-encounters',compact('encounters'));
+        return view('animal-encounters-new',compact('encounters'));
     });
     Route::get('promotions',function(){
         $promotions=Promotion::all();
-        return view('promotions',compact('promotions'));
+        return view('promotions-new',compact('promotions'));
     });
     Route::get('programs',function(){
         $programs=Animal_Program::all();
-        return view('program',compact('programs'));
+        return view('program-new',compact('programs'));
     });
     Route::get('feeding-schedule',function(){
         return view('feeding-schedule');

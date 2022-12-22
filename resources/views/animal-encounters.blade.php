@@ -18,10 +18,10 @@
          <figure class="card  card-lg border-0" style="border:none!important;" >
             @php
             $filename=$encounter->filenames;
-        $filename=str_replace(array('"','[',']'),'',$filename);
-        $filename=explode(',',$filename);
-        // $count=count($filename);
-        $img_to_present=$filename[0];
+            $filename=str_replace(array('"','[',']'),'',$filename);
+            $filename=explode(',',$filename);
+            // $count=count($filename);
+            $img_to_present=$filename[0];
             @endphp
             @if($encounter->animal_name=="Penguin")
              <a href="/product/penguin-encounters" class="img-wrap card-img-top" data-abc="true">
