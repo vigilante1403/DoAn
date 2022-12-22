@@ -325,7 +325,7 @@
 
 
     <!-- Banner  -->
-<div class="banner" style="background-image: url({{ asset('img/banner-10.jpeg') }})">
+<div class="banner" style="background-image: url({{asset('img/banner-10.jpeg')}})">
   <div class="banner__content">
     <div class="container">
       <div class="row g-3 justify-content-center">
@@ -509,6 +509,22 @@
  
   <!-- Client Section Slider -->
   <div class="section--sm">
+  <div class="section__head">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="text-center">
+              <span class="section__particles">
+                <span class="section__subtitle section__subtitle-dash"
+                  >Our Partner</span
+                >
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
         <div class="row">
           <div class="col-12">
@@ -617,7 +633,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="OurMission.html"
+                href="/our-mission"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Our Mission
@@ -625,7 +641,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Education.html"
+                href="/education"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Education
@@ -633,7 +649,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="PeguinCam.html"
+                href="/error"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -641,7 +657,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="../Gallery.html"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -649,7 +665,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="../contact.html"
+                href="/contact"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -664,7 +680,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="Adopt-An-Animal.html"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -672,7 +688,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Animal-Encounters.html"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -680,7 +696,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Promotions.html"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -688,7 +704,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Feeding-Schedule.html"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -696,7 +712,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Proposals.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

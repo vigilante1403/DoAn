@@ -339,7 +339,7 @@
               </a>
             </li>
             <li class="list--row__item breadcrumbs__item">
-              <a href="../Service.html" class="t-link breadcrumbs__link text--white">
+              <a href="/Service" class="t-link breadcrumbs__link text--white">
                 Service
               </a>
             </li>
@@ -614,7 +614,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/viewgallery"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -637,7 +637,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="Adopt-An-Animal.html"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -645,7 +645,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Animal-Encounters.html"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -653,7 +653,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Promotions.html"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -661,7 +661,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Feeding-Schedule.html"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -669,7 +669,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Proposals.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

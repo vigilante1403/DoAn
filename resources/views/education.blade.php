@@ -338,7 +338,7 @@
               </a>
             </li>
             <li class="list--row__item breadcrumbs__item">
-              <a href="../pages.html" class="t-link breadcrumbs__link text--white">
+              <a href="/pages" class="t-link breadcrumbs__link text--white">
                 Pages
               </a>
             </li>
@@ -421,7 +421,7 @@
                     <div class="event-card__content">
                       <h4 class="event-card__title mb-2">
                         <a
-                          href="event-details.html"
+                          href=""
                           class="t-link event-card__title-link"
                         >
                         Outreach Programs
@@ -445,7 +445,7 @@
                     <div class="event-card__content">
                       <h4 class="event-card__title mb-2">
                         <a
-                          href="event-details.html"
+                          href=""
                           class="t-link event-card__title-link"
                         >
                           <span>Specialty/Awareness Days</span>
@@ -510,7 +510,7 @@
                  
                   <div class="blog-post__content">
                     <h4 class="blog-post__title">
-                      <a href="Experiences.html" class="t-link blog-post__title-link">
+                      <a href="Experiences" class="t-link blog-post__title-link">
                         Experiences
                       </a>
                     </h4>
@@ -550,6 +550,22 @@
 
   <!-- Client Section Slider -->
   <div class="section--sm section--bottom">
+  <div class="section__head">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="text-center">
+              <span class="section__particles">
+                <span class="section__subtitle section__subtitle-dash"
+                  >Our Partner</span
+                >
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
         <div class="row">
           <div class="col-12">
@@ -675,7 +691,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/PeguinCam.html"
+                href="/error"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -683,10 +699,10 @@
             </li>
             <li class="list--column__item">
               <a
-                href="blog.html"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Blog
+                Gallery
               </a>
             </li>
             <li class="list--column__item">
@@ -706,7 +722,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="/services/adopt-an-animal"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -714,7 +730,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/services/animal-encounters"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -722,7 +738,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/services/promotions"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -730,7 +746,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/services/feeding-schedule"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -738,7 +754,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="cart.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

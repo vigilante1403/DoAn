@@ -363,42 +363,7 @@
     </div>
   </div>
 </div> 
-<!-- Banner End --> 
 
-<!-- <section class="hero hero_style_video">
-
-  <div class="hero__video">
-        <video autoplay="" loop="" muted="" playsinline="" poster="">
-    <source src="img/Aquarium-Commercial-website.mp4" type="video/mp4">
-    </video>
-        </div>
-
-  
-    <div class="wrap">
-      <h2 class="mt-0 text--white">Pages</h2>
-      <ul
-      class="list list--row breadcrumbs justify-content-center"
-      style="--gap: 2rem"
-    >
-      <li class="list--row__item breadcrumbs__item">
-        <a href="index.html" class="t-link breadcrumbs__link text--white">
-          Home
-        </a>
-      </li>
-      <li class="list--row__item breadcrumbs__item">
-        <a
-          href="pages.html"
-          class="t-link breadcrumbs__link text--white"
-        >
-          Pages
-        </a>
-      </li>
-    </ul>
-      
-    </div>
-
-  
-  </section> -->
 
 <!-- Blog Post  -->
 <div class="section--top"> 
@@ -484,6 +449,22 @@
 
    <!-- Client Section Slider -->
    <div class="section--sm">
+   <div class="section__head">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="text-center">
+              <span class="section__particles">
+                <span class="section__subtitle section__subtitle-dash"
+                  >Our Partner</span
+                >
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
      
     <div class="container">
         <div class="row">
@@ -538,7 +519,7 @@
 
  <!-- Footer  -->
 
-<footer class="footer">
+ <footer class="footer">
   <div class="section">
     <div class="container">
       <div class="row g-4 justify-content-xl-between">
@@ -593,7 +574,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="sub-html/OurMission.html"
+                href="/our-mission"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Our Mission
@@ -601,7 +582,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/Education.html"
+                href="/education"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Education
@@ -609,7 +590,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/PeguinCam.html"
+                href="/error"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -617,7 +598,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Gallery.html"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -625,7 +606,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="contact.html"
+                href="/contact"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -640,7 +621,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="sub-html/Adopt-An-Animal.html"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -648,7 +629,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/Animal-Encounters.html"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -656,7 +637,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/Promotions.html"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -664,7 +645,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/Feeding-Schedule.html"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -672,7 +653,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/Proposals.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

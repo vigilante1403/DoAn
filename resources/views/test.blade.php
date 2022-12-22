@@ -974,138 +974,6 @@
 </div>
 <!-- Fact Section End -->
 
-    <!-- Membership Plan  -->
-<!-- <div class="section membership-section">
-  <div class="section__head">
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-10 col-xl-6">
-          <div class="text-center">
-            <span class="section__particles">
-              <span class="section__subtitle section__subtitle-dash"> Membership Plan </span>
-            </span>
-            <h2 class="section__title">
-              You can be a proud member of <span>Viserlife</span>
-            </h2>
-            <p class="section__para mx-auto mb-0">
-              More than admission, events and parking. Each membership directly supports the care of Viserlife Zoo animals and conservation efforts around the world.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row g-4 g-xxl-5">
-      <div class="col-lg-6">
-        <div class="membership-card">
-          <div class="membership-card__img">
-            <img
-              src="assets/images/member-img-1.png"
-              alt="image"
-              class="membership-card__img-is"
-            />
-          </div>
-          <div class="membership-card__content">
-            <h4 class="membership-card__price">$275</h4>
-            <h5 class="membership-card__title">Family Deluxe</h5>
-            <p class="heading-clr sm-text fw-md text-uppercase">
-              ALL PREFERRED AND STANDARD LEVEL BENEFITS PLUS
-            </p>
-            <ul class="list list--base">
-              <li>Enjoy the Zoo with 2 adults</li>
-              <li> 4 children and 2 guests each visit</li>
-              <li>10 pack of tickets for Carousel or Wings </li>
-            </ul>
-            <div class="mt-4">
-              <a href="sign-up.html" class="t-link btn btn--md btn--gallery"> Join Now </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="membership-card">
-          <div class="membership-card__img">
-            <img
-              src="assets/images/member-img-2.png"
-              alt="image"
-              class="membership-card__img-is"
-            />
-          </div>
-          <div class="membership-card__content">
-            <h4 class="membership-card__price">$200</h4>
-            <h5 class="membership-card__title">Family Plus</h5>
-            <p class="heading-clr sm-text fw-md text-uppercase">
-                ALL STANDARD LEVEL BENEFITS PLUS FAMILY ORIENTED
-            </p>
-            <ul class="list list--base">
-              <li>2 adults and up to 4 children</li>
-              <li>Plus 2 one-time-use tickets</li>
-              <li>Free Animal museum Exhibition plus 5 rides</li>
-            </ul>
-            <div class="mt-4">
-              <a href="sign-up.html" class="t-link btn btn--md btn--gallery"> Join Now </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="membership-card">
-          <div class="membership-card__img">
-            <img
-              src="assets/images/member-img-3.png"
-              alt="image"
-              class="membership-card__img-is"
-            />
-          </div>
-          <div class="membership-card__content">
-            <h4 class="membership-card__price">$200.89</h4>
-            <h5 class="membership-card__title">Standard</h5>
-            <p class="heading-clr sm-text fw-md text-uppercase">
-              Our most convenient option!
-            </p>
-            <ul class="list list--base">
-              <li>Create life-long family memories for 2 adults</li>
-              <li>Allow 2 childrens</li>
-              <li>Free Animal museum Exhibition</li>
-            </ul>
-            <div class="mt-4">
-              <a href="sign-up.html" class="t-link btn btn--md btn--gallery"> Join Now </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="membership-card">
-          <div class="membership-card__img">
-            <img
-              src="assets/images/member-img-4.png"
-              alt="image"
-              class="membership-card__img-is"
-            />
-          </div>
-          <div class="membership-card__content">
-            <h4 class="membership-card__price">$380.99</h4>
-            <h5 class="membership-card__title">VIP Pass</h5>
-            <p class="heading-clr sm-text fw-md text-uppercase">
-              ALL BENEFITS Includes PLUS More
-            </p>
-            <ul class="list list--base">
-              <li>20% Dsicount All Event</li>
-              <li>Allow 2 adult person</li>
-              <li>PRIORITY ADMISSION with no reservations required</li>
-            </ul>
-            <div class="mt-4">
-              <a href="sign-up.html" class="t-link btn btn--md btn--gallery"> Join Now </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-<!-- Membership Plan End -->
-
     <!-- Feedback Section  -->
     <div class="feedback-section">
       <div class="section feedback-section__wrapper">
@@ -1292,7 +1160,7 @@
           <div class="event-card__content">
             <h5 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href="#"
                 class="t-link event-card__title-link"
               >
                 Scoop on Sloths
@@ -1334,7 +1202,7 @@
           <div class="event-card__content">
             <h5 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href="#"
                 class="t-link event-card__title-link"
               >
               Sea of Lights
@@ -1376,7 +1244,7 @@
           <div class="event-card__content">
             <h5 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href="#"
                 class="t-link event-card__title-link"
               >
               Sea Of Lights
@@ -1418,7 +1286,7 @@
           <div class="event-card__content">
             <h5 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href="#"
                 class="t-link event-card__title-link"
               >
                 Sea Of Lights
@@ -1702,7 +1570,7 @@
         </div>
     </div>
 </div> -->
-<div style="background-color:black;">
+<div style="background-color:hsl(var(--dark))">
 <div class="feedback container" style="color:white">
   <div class="title" style="margin-top:15px;">
   <h4 style="color:white" >Reviews/Ratings</h4>
@@ -1721,6 +1589,22 @@
 </div>
   <!-- Client Section Slider -->
   <div class="section--sm section--bottom">
+  <div class="section__head">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="text-center">
+              <span class="section__particles">
+                <span class="section__subtitle section__subtitle-dash"
+                  >Our Partner</span
+                >
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1786,21 +1670,21 @@
           <ul class="list" style="--gap: .5rem;">
             <li>
               <div class="list list--row">
-                <span class="info-section__icon">
+                <span class="info-section__icon" >
                   <i class="fas fa-map-marker-alt"></i>
                 </span>
-                <p class="mb-0 text--white t-short-para">
-                  300 Ocean Ave N, Point Pleasant Beach, NJ 08742, Hoa Kỳ
+                <p class="mb-0 text--white t-short-para" >
+                  300 Ocean Ave N, Point Pleasant Beach, NJ 08742
                 </p>
               </div>
             </li>
             <li>
               <div class="list list--row">
-                <span class="info-section__icon">
+                <span class="info-section__icon" >
                   <i class="far fa-envelope"></i>
                 </span>
                 <ul class="list" style="--gap: 0.5rem">
-                  <li>
+                  <li >
                     <p class="mb-0 text--white t-short-para">
                       support24/7.com
                     </p>
@@ -1810,11 +1694,11 @@
             </li>
             <li>
               <div class="list list--row">
-                <span class="info-section__icon">
+                <span class="info-section__icon" >
                   <i class="fas fa-phone-alt"></i>
                 </span>
                 <ul class="list" style="--gap: 0.5rem">
-                  <li>
+                  <li >
                     <p class="mb-0 text--white t-short-para">
                       +123 - 456 - 789000
                     </p>
@@ -1827,44 +1711,44 @@
         </div>
         <div class="col-md-6 col-lg-3 col-xl-2">
           <h4 class="info-section__title mt-0 text--white">
-            Animals
+            UseFul Link
           </h4>
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="about.html"
+                href="/our-mission"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                About Us
+                Our Mission
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="faq.html"
+                href="/education"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                FAQ
+                Education
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="member.html"
+                href="/error"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Membership
+                Peguin Cam
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="blog.html"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Blog
+                Gallery
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="contact.html"
+                href="/contact"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -1874,47 +1758,47 @@
         </div>
         <div class="col-md-6 col-lg-3 col-xl-2">
           <h4 class="info-section__title mt-0 text--white">
-            Useful Link
+           Services
           </h4>
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="animal.html"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Animals
+                Adopt-An-Animal
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="animal-details.html"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
-              Animals Details
+              Animals-Encounters
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="event.html"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Events
+                Promotions
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="event-details.html"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Event Details
+               Feeding-Schedule
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="cart.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Cart
+                Proposals
               </a>
             </li>
           </ul>
@@ -1930,7 +1814,7 @@
                   <div class="col-sm-10">
                       <div class="text-center text-md-end">
                          
-                        <div class="newsletter mx-auto ms-md-auto me-md-0">
+                        <div class="newsletter ms-md-auto me-md-0">
                           <div class="newsletter__container rounded-pill">
                             <input
                               type="text"
@@ -1979,7 +1863,7 @@
   <div class="footer__copyright py-3">
     <p class="mb-0 sm-text text--white text-center">
       Copyright © 2022. All Rights Reserved By
-      <a href="#top" class="t-link t-link--base text--base">Viserlife</a>
+      <a href="#" class="t-link t-link--base text--base">Viserlife</a>
     </p>
   </div>
 </footer>

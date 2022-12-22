@@ -339,7 +339,7 @@
               </a>
             </li>
             <li class="list--row__item breadcrumbs__item">
-              <a href="../Pages.html" class="t-link breadcrumbs__link text--white">
+              <a href="/Pages" class="t-link breadcrumbs__link text--white">
                 Pages
               </a>
             </li>
@@ -399,7 +399,7 @@
                 <div class="event-card" style="flex-direction:column;align-items:center">
                   <h5 class="event-card__title mb-2">
                     <a
-                      href="event-details.html"
+                      href=""
                       class="t-link event-card__title-link"
                     >
                     Private Behind the Scenes Tour
@@ -430,7 +430,7 @@
                 <div class="event-card" style="flex-direction:column;align-items:center">
                   <h5 class="event-card__title mb-2">
                     <a
-                      href="event-details.html"
+                      href=""
                       class="t-link event-card__title-link"
                     >
                       <span>Proposals
@@ -458,7 +458,7 @@
                 <div class="event-card" style="flex-direction:column;;align-items:center">
                   <h5 class="event-card__title mb-2">
                     <a
-                      href="event-details.html"
+                      href=""
                       class="t-link event-card__title-link"
                     >
                     <span>Virtual Programs</span>
@@ -488,7 +488,7 @@
                 <div class="event-card" style="flex-direction:column;align-items:center">
                   <h5 class="event-card__title mb-2">
                     <a
-                      href="event-details.html"
+                      href=""
                       class="t-link event-card__title-link"
                     >
                     Animal Educational Programs
@@ -518,7 +518,7 @@
                 <div class="event-card" style="flex-direction:column;;align-items:center">
                   <h5 class="event-card__title mb-2">
                     <a
-                      href="event-details.html"
+                      href=""
                       class="t-link event-card__title-link"
                     >
                       <span>Adopt-An-Animal</span>
@@ -613,7 +613,7 @@
                
                 <div class="blog-post__content">
                   <h4 class="blog-post__title">
-                    <a href="Proposals.html" class="t-link blog-post__title-link">
+                    <a href="/Proposals" class="t-link blog-post__title-link">
                       Proposals
                     </a>
                   </h4>
@@ -633,6 +633,22 @@
 
   <!-- Client Section Slider -->
   <div class="section--sm">
+  <div class="section__head">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="text-center">
+              <span class="section__particles">
+                <span class="section__subtitle section__subtitle-dash"
+                  >Our Partner</span
+                >
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -741,7 +757,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="OurMission.html"
+                href="/our-mission"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Our Mission
@@ -749,7 +765,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Education.html"
+                href="/education"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Education
@@ -765,7 +781,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="../Gallery.html"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Gallery
@@ -773,7 +789,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="../contact.html"
+                href="/contact"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -788,7 +804,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="Adopt-An-Animal.html"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -796,7 +812,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Animal-Encounters.html"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -804,7 +820,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Promotions.html"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -812,7 +828,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="Feeding-Schedule.html"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -820,14 +836,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="/services/programs"
-                class="-link t-link--base text--white d-inline-block"
-                >Animal Programs
-              </a>
-            </li>
-            <li class="list--column__item">
-              <a
-                href="Proposals.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

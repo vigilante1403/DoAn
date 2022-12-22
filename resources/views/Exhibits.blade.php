@@ -339,7 +339,7 @@
               </a>
             </li>
             <li class="list--row__item breadcrumbs__item">
-              <a href="../Explore.html" class="t-link breadcrumbs__link text--white">
+              <a href="/Explore" class="t-link breadcrumbs__link text--white">
                 Explore
               </a>
             </li>
@@ -387,7 +387,7 @@
           <div class="event-card__content">
             <h3 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href=""
                 class="t-link event-card__title-link"
               >
                 Harbol Seal
@@ -414,7 +414,7 @@
           <div class="event-card__content">
             <h3 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href=""
                 class="t-link event-card__title-link"
               >
               Local Fish
@@ -442,7 +442,7 @@
           <div class="event-card__content">
             <h3 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href=""
                 class="t-link event-card__title-link"
               >
               Pine Barrens
@@ -469,7 +469,7 @@
           <div class="event-card__content">
             <h3 class="event-card__title mb-2">
               <a
-                href="event-details.html"
+                href=""
                 class="t-link event-card__title-link"
               >
                 RainForest
@@ -565,6 +565,22 @@
 
   <!-- Client Section Slider -->
   <div class="section--sm section--bottom">
+  <div class="section__head">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-8 col-xl-6">
+            <div class="text-center">
+              <span class="section__particles">
+                <span class="section__subtitle section__subtitle-dash"
+                  >Our Partner</span
+                >
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
         <div class="row">
           <div class="col-12">
@@ -675,7 +691,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="sub-html/OurMission.html"
+                href="/our-mission"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Our Mission
@@ -683,7 +699,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/Education.html"
+                href="/education"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Education
@@ -691,7 +707,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="sub-html/PeguinCam.html"
+                href="/error"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Peguin Cam
@@ -699,15 +715,15 @@
             </li>
             <li class="list--column__item">
               <a
-                href="blog.html"
+                href="/gallery"
                 class="t-link t-link--base text--white d-inline-block"
               >
-                Blog
+                Gallery
               </a>
             </li>
             <li class="list--column__item">
               <a
-                href="contact.html"
+                href="/contact"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Contact
@@ -722,7 +738,7 @@
           <ul class="list list--column">
             <li class="list--column__item">
               <a
-                href="animal.html"
+                href="/adopt-an-animal"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Adopt-An-Animal
@@ -730,7 +746,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="animal-details.html"
+                href="/animal-encounters"
                 class="t-link t-link--base text--white d-inline-block"
               >
               Animals-Encounters
@@ -738,7 +754,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="event.html"
+                href="/Promotions"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Promotions
@@ -746,7 +762,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="event-details.html"
+                href="/Feeding-Schedule"
                 class="t-link t-link--base text--white d-inline-block"
               >
                Feeding-Schedule
@@ -754,7 +770,7 @@
             </li>
             <li class="list--column__item">
               <a
-                href="cart.html"
+                href="/Proposals"
                 class="t-link t-link--base text--white d-inline-block"
               >
                 Proposals

@@ -2158,7 +2158,6 @@ textarea.form--control:focus {
     display: grid;
     place-items: center;
     aspect-ratio: 1;
-    background-image: url(../images/paw-img.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3747,7 +3746,6 @@ textarea.form--control:focus {
     display: grid;
     place-items: center;
     aspect-ratio: 1;
-    background-image: url(../images/paw-img.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5067,7 +5065,6 @@ textarea.form--control:focus {
 .footer {
     position: relative;
     isolation: isolate;
-    background-image: url("../images/footer-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5125,7 +5122,6 @@ textarea.form--control:focus {
         position: absolute;
         left: -40px;
         bottom: -90px;
-        background-image: url(../images/welcome-img.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -5140,7 +5136,6 @@ textarea.form--control:focus {
 .info-section {
     position: relative;
     isolation: isolate;
-    background-image: url(../images/info-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5232,7 +5227,6 @@ textarea.form--control:focus {
 .fact-section {
     position: relative;
     isolation: isolate;
-    background-image: url(../images/fact-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5279,7 +5273,6 @@ textarea.form--control:focus {
 .feedback-section {
     position: relative;
     isolation: isolate;
-    background-image: url(../images/feedback-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5384,7 +5377,6 @@ textarea.form--control:focus {
         position: absolute;
         left: 0;
         bottom: 0;
-        background-image: url(../images/welcome-img.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -5400,7 +5392,6 @@ textarea.form--control:focus {
         position: absolute;
         right: 0;
         bottom: -15px;
-        background-image: url(../images/feedback-img-2.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -5535,7 +5526,6 @@ textarea.form--control:focus {
         top: 0;
         bottom: 0;
         left: 30%;
-        background-image: url(../images/hero.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -5559,7 +5549,6 @@ textarea.form--control:focus {
         top: 0;
         bottom: 0;
         right: 30%;
-        background-image: url(../images/signup-img.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
